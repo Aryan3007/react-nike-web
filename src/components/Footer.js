@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <>
       <div className=" w-full p-12 flex flex-row justify-between  footer upfoot">
-        <div>
+        <div className="mobilefooter">
           <h1 className="text-2xl font-semibold my-6">Get in Touch :</h1>
 
           <h2>Don't miss out. Stay in the loop.</h2>
