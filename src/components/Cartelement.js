@@ -1,9 +1,13 @@
-import React from "react";
-import Cartelem from "./Cartelem";
+import React from "react";import Cartelem from "./Cartelem";
 import cartdata from './Cartdata';
 import { Link } from "react-router-dom";
+// import { useState } from "react";
 
-const Cartelement = () => {
+
+const Cartelement = (array) => {
+
+
+
   if(cartdata.length===0){
     return(
 
