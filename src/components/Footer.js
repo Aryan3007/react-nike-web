@@ -39,7 +39,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        
+
         <div className="flex gap-12">
           <div className="flex flex-col h-24 my-6 w-34 text-3xl gap-10">
             <h1 className="text-xl font-semibold">About</h1>
