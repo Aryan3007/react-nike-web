@@ -354,7 +354,7 @@ code {
   }
   .footer {
     flex-direction: column;
-    padding: 0px 0px 40px 20px;
+    /* padding: 0px 0px 40px 20px; */
     justify-content: center;
   }
   .airmax {
@@ -375,9 +375,6 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .footerimg {
-    display: none;
   }
   .cartdiv {
     flex-direction: column;
@@ -460,6 +457,13 @@ code {
   .maindiv {
     display: flex;
     flex-direction: column;
+  }
+  .textarea{
+    width: 100%;
+  }
+  .mobilefooter{
+    width: 100%;
+    padding: 10px;
   }
   .show {
     display: flex;

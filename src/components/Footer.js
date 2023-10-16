@@ -39,9 +39,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        {/* <div className="footerimg h-full w-2/5 bg-black">
-        <img src="https://images.unsplash.com/photo-1506544777-64cfbe1142df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="" />
-      </div> */}
+        
         <div className="flex gap-12">
           <div className="flex flex-col h-24 my-6 w-34 text-3xl gap-10">
             <h1 className="text-xl font-semibold">About</h1>
