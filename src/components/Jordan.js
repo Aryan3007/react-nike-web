@@ -1,10 +1,11 @@
 import React from "react";
 // import { useNavigate } from "react-router-dom";
 import cartdata from "./Cartdata";
-import { FiHeart } from "react-icons/fi";
+import { AiFillHeart } from "react-icons/ai";
 import likeddata from "./Likeddata";
 import { Link } from "react-router-dom";
 import innerdata from "./Innerdata";
+import { useState } from "react";
 
 const Jordan = (props) => {
 
@@ -32,10 +33,15 @@ const Jordan = (props) => {
     }, 1200);
   }
 
+  // let like=document.getElementById(props.id)
+  const [likeclass, setlikeclass] = useState(false);
+  
+
   function likedClicked() {
-    notificationhandle2();
+    setlikeclass(!likeclass);
     likeddata.unshift(props);
-  }
+    notificationhandle2();
+    }
   
   function handleinner() {
     innerdata.unshift(props)
@@ -55,7 +61,7 @@ const Jordan = (props) => {
       <div className="flex flex-row gap-2">
         <button
           onClick={byunowClicked}
-          id={props.id}
+          // id={props.id}
           className="buybutton w-28 bg-black text-white text-sm my-4 rounded-full"
         >
           Add to Bag
@@ -63,9 +69,9 @@ const Jordan = (props) => {
 
         <button
           onClick={likedClicked}
-          className=" h-10 w-10 mt-3 likedicon rounded-2xl  text-black"
+          className=" h-10 w-10 mt-3 rounded-2xl text-black"
         >
-          <FiHeart className="text-2xl mx-2 font-bold " />
+         <AiFillHeart  id={props.id} className={likeclass? "red" : "simple"} />
         </button>
       </div>
     </div>

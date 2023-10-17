@@ -21,19 +21,20 @@ const Sales = (props) => {
       <br />
       <div>
         <div className="flex flex-row flex-wrap h-full gap-16 w-full justify-evenly salesdiv">
-          {Jordandata.map((Jordandata, i) => {
+          {Jordandata.map((Jordandata, index) => {
             return (
               <Jordan
                 likeid={notilike}
                 notiid={noticart}
                 noticlass={updatenoticlass}
                 noticlass2={updatenoticlass2}
-                key={i}
+                key={index}
                 image={Jordandata.image}
                 image2={Jordandata.image2}
                 image3={Jordandata.image3}
                 image4={Jordandata.image4}
                 price={Jordandata.price}
+                id={Jordandata.id}
                 name={Jordandata.name}
               />
             );

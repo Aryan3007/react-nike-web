@@ -30,18 +30,18 @@ const Airmaxelements = (props) => {
   function likedClicked() {
     likeddata.unshift(props)
     notificationhandle2()
-    let like=document.getElementById("like")
+    let like=document.getElementById(props.id)
     like.style.color="red"
   }
 
   function handleinner() {
-    innerdata.push(props)
+    innerdata.unshift(props)
   }
 
   return (
     <>
       <div
-        id={props.id}
+        
         className="airmaxmargin h-84 w-72 flex justify-between flex-col  "
       >
         <Link to="/Inner">
@@ -62,7 +62,7 @@ const Airmaxelements = (props) => {
 
 
         <button onClick={likedClicked} className=" h-10 w-10 mt-3 rounded-2xl  text-black">
-          <AiFillHeart id="like" className="text-2xl text-black mx-2 font-bold " />
+          <AiFillHeart id={props.id} className="text-2xl likedicon text-black mx-2 font-bold " />
         </button> 
           </div>
       </div>

@@ -113,7 +113,15 @@ code {
   align-items: center;
 }
 .likedicon:hover {
-  box-shadow: 0px 2px 10px grey;
+  color: red;
+  /* box-shadow: 0px 2px 10px grey; */
+}
+.red{
+  color: red !important;
+  font-size: 26px;
+}
+.simple{
+  font-size: 26px;
 }
 .email {
   padding: 10px;
