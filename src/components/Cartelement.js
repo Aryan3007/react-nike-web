@@ -23,11 +23,12 @@ const Cartelement = (array) => {
   else{
 
     return (
-    
-          <Cartelem image={array.image} price={array.price} name={array.name}/>
+      cartdata.map((array, id)=>{
+        return(
+          <Cartelem image={array.image} price={array.price} name={array.name} key={id}/>
           )
-        
-  
+        })
+        );
       }
 };
 
